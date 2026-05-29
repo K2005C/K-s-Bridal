@@ -17,6 +17,10 @@ A responsive bridal boutique website built using HTML, CSS and JavaScript.
 - HTML5
 - CSS3
 - JavaScript
+- Responsive Design
+- CSS Flexbox
+- CSS Grid
+- DOM Manipulation
 
 ## Author
 
