@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K's Bridal</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">K's Bridal</div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#dresses">Dresses</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#appointment">Appointment</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+
+    <div class="hero">
+      <h1>Find Your Dream Dress</h1>
+
+      <p>
+        Soft, romantic bridal gowns for your unforgettable day
+      </p>
+
+      <button onclick="scrollToDresses()">
+        View Collection
+      </button>
+    </div>
+
+  </header>
+
+  <section id="dresses">
+
+    <h2 class="section-title">
+      K's Bridal Collection
+    </h2>
+
+    <p class="section-subtitle">
+      Explore different bridal styles, fabrics and silhouettes.
+    </p>
+
+    <div class="filters">
+
+      <button class="active"
+        onclick="filterDresses('all', this)">
+        All
+      </button>
+
+      <button onclick="filterDresses('sheath', this)">
+        Sheath
+      </button>
+
+      <button onclick="filterDresses('mermaid', this)">
+        Mermaid
+      </button>
+
+      <button onclick="filterDresses('fit-and-flare', this)">
+        Fit and Flare
+      </button>
+
+      <button onclick="filterDresses('a-line', this)">
+        A-Line
+      </button>
+
+      <button onclick="filterDresses('ballgown', this)">
+        Ballgown
+      </button>
+
+      <button onclick="filterDresses('basque-waist', this)">
+        Basque Waist
+      </button>
+
+      <button onclick="filterDresses('satin', this)">
+        Satin Dresses
+      </button>
+
+      <button onclick="filterDresses('lace', this)">
+        Lace Dresses
+      </button>
+
+    </div>
+
+    <div class="dress-grid">
+
+      <div class="dress-card"
+        data-category="sheath">
+
+        <img src="Sheath dress.png"
+          alt="Sheath wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Sheath dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Sheath Dress</h3>
+
+          <p>
+            A slim, elegant dress that follows the body's natural shape.
+          </p>
+
+          <p class="price">
+            From €2,500
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="mermaid">
+
+        <img src="Mermaid dress.jpeg"
+          alt="Mermaid wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Mermaid dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Mermaid Dress</h3>
+
+          <p>
+            A fitted style that flares out around the knee for a dramatic look.
+          </p>
+
+          <p class="price">
+            From €2,125
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="fit-and-flare">
+
+        <img src="Fit-and-Flare dress.png"
+          alt="Fit and flare wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Fit and Flare dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Fit and Flare Dress</h3>
+
+          <p> A style that's fitted at the top and gently flared from the hips.
+          </p>
+
+          <p class="price">
+            From €2,350
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="a-line">
+
+        <img src="A-line dress.jpeg"
+          alt="A-line wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more A-Line dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>A-Line Dress</h3>
+
+          <p>
+            A classic bridal shape that flows out softly from the waist.
+          </p>
+
+          <p class="price">
+            From €2,800
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="ballgown">
+
+        <img src="Ballgown dress.jpeg"
+          alt="Ballgown wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Ballgown dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Ballgown Dress</h3>
+
+          <p>
+            A princess-style dress with a full skirt and romantic volume.
+          </p>
+
+          <p class="price">
+            From €3,200
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="basque-waist">
+
+        <img src="Basque waist dress.png"
+          alt="Basque waist wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Basque Waist dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Basque Waist Dress</h3>
+
+          <p>
+            A regal style with a dropped V-shaped waistline.
+          </p>
+
+          <p class="price">
+            From €2,700
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="satin">
+
+        <img src="Satin dress.jpeg"
+          alt="Satin wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Satin dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Satin Dress</h3>
+
+          <p>
+            A smooth and luxurious dress with a clean bridal finish.
+          </p>
+
+          <p class="price">
+            From €3,450
+          </p>
+
+        </div>
+      </div>
+
+      <div class="dress-card"
+        data-category="lace">
+
+        <img src="Lace dress.jpeg"
+          alt="Lace wedding dress">
+
+        <p class="book-message">
+          Book appointment to see more Lace dresses.
+        </p>
+
+        <div class="dress-info">
+
+          <h3>Lace Dress</h3>
+
+          <p>
+            A romantic bridal style with delicate lace detailing.
+          </p>
+
+          <p class="price">
+            From €3,050
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2 class="section-title">
+      About K's Bridal
+    </h2>
+
+    <div class="about">
+
+      <p>
+        K's Bridal helps brides find beautiful,
+        comfortable and unforgettable wedding dresses.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="appointment">
+
+    <h2 class="section-title">
+      Book an Appointment
+    </h2>
+
+    <p class="section-subtitle">
+      Arrange a private fitting with our bridal stylist.
+    </p>
+
+    <form class="appointment"
+      onsubmit="submitForm(event)">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Your Email"
+        required
+      >
+
+      <select id="style" required>
+
+        <option value="">
+          Preferred Dress Style
+        </option>
+
+        <option>Sheath</option>
+        <option>Mermaid</option>
+        <option>Fit and Flare</option>
+        <option>A-Line</option>
+        <option>Ballgown</option>
+        <option>Basque Waist</option>
+        <option>Satin Dress</option>
+        <option>Lace Dress</option>
+        <option>Not Sure Yet</option>
+
+      </select>
+
+      <textarea
+        id="message"
+        rows="4"
+        placeholder="Tell us about your dream dress"
+      ></textarea>
+
+      <button type="submit">
+        Submit Appointment Request
+      </button>
+
+    </form>
+
+  </section>
+
+  <div class="popup" id="popup">
+
+    <div class="popup-content">
+
+      <span class="close"
+        onclick="closePopup()">
+        &times;
+      </span>
+
+      <h2 id="popupTitle"></h2>
+
+      <p id="popupText"></p>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 K's Bridal</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <div id="successPopup" class="success-popup">
+
+  <div class="success-content">
+
+    <h2>K's Bridal</h2>
+
+    <p id="successMessage"></p>
+
+    <button onclick="closeSuccessPopup()">
+        Lovely!
+    </button>
+
+  </div>
+
+</div>
+
+</body>
+</html>
