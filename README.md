@@ -1,6 +1,6 @@
 # K's Bridal
 
-![Homepage] (Homepage.png)
+![Homepage](Homepage.png)
 
 A responsive bridal boutique website built using HTML, CSS and JavaScript.
 
