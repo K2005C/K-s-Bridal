@@ -1,8 +1,10 @@
 # K's Bridal
 
-![Homepage](Homepage.png)
-
 A responsive bridal boutique website built using HTML, CSS and JavaScript.
+
+## Live Demo
+
+[View Live Demo](https://k2005c.github.io/K-s-Bridal/)
 
 ## Features
 
